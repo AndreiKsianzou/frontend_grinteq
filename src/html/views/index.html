@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700|Roboto:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.bundle.css">
+</head>
+<body>
+<%= _.template(require('./../includes/header.html'))(data) %> 
+<section class="main-slide">
+  <div class="main-slide__wrapper">
+    <div class="main-slide__overlay"></div>
+    <div class="main-slide__img" style="background-image: url(./img/slide.jpg);">
+      <video id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto">
+        <source src="./img/video.mp4" type="video/webm">
+      </video>
+    </div>
+    <div class="main-slide__caption">
+      <span>Talented developers,<br/>
+      ready to join your team. </span>
+    </div>
+  </div>
+</section>
+<section class="clients">
+  <div class="clients__wrapper">
+    <div class="container">
+      <div class="clients__box">
+        <div class="clients__list owl-carousel">
+          <img src="./img/bonusway.svg" alt="bonusway" class="clients__item">
+          <img src="./img/decred.svg" alt="decred" class="clients__item">
+          <img src="./img/kultmacher.svg" alt="kultmacher" class="clients__item">
+          <img src="./img/rdw.svg" alt="rdw" class="clients__item">
+          <img src="./img/rel.svg" alt="relesys" class="clients__item">
+          <img src="./img/tacktome.svg" alt="stacktome" class="clients__item">
+          <img src="./img/ultiro.svg" alt="ultiro" class="clients__item">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="content">
+  <div class="content__wrapper">
+    <div class="container">
+      <div class="line">
+        <div class="line__wrapper">
+          <div class="line__item line__item_title">
+            <div class="line__title">
+              <span>what_<br/>
+                we_do</span>
+            </div>
+          </div>
+          <div class="line__item line__item_4">
+            <div class="line__text">
+              <span>Build up a motivated team, fine-tuned for your project needs. The team adopts your code development practices and works as an extension to your in-house developers or as a stand alone development unit, which you lead.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line">
+        <div class="line__wrapper">
+          <div class="line__item line__item_title">
+            <div class="line__title">
+              <span>values_<br/>
+                we_deliver</span>
+            </div>
+          </div>
+          <div class="line__item">
+            <div class="deliver">
+              <div class="deliver__wrapper">
+                <div class="deliver__icon">
+                  <img src="./img/quick_set_up.png" alt="Quick set-up" class="deliver__img">
+                </div>
+                <div class="deliver__title">
+                  <span>Quick set-up</span>
+                </div>
+                <div class="deliver__text">
+                  <span>It takes 1-3 weeks on average to set up and balance your team.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="line__item">
+            <div class="deliver">
+              <div class="deliver__wrapper">
+                <div class="deliver__icon">
+                  <img src="./img/flex_icon.svg" alt="flexibility" class="deliver__img">
+                </div>
+                <div class="deliver__title">
+                  <span>Flexibility</span>
+                </div>
+                <div class="deliver__text">
+                  <span>Your team can be easily scaled up/down.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="line__item">
+            <div class="deliver">
+              <div class="deliver__wrapper">
+                <div class="deliver__icon">
+                  <img src="./img/adj_icon.svg" alt="adjustability" class="deliver__img">
+                </div>
+                <div class="deliver__title">
+                  <span>Adjustability</span>
+                </div>
+                <div class="deliver__text">
+                  <span>Developers will adopt your code development practices and methodologies.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="line__item">
+            <div class="deliver">
+              <div class="deliver__wrapper">
+                <div class="deliver__icon">
+                  <img src="./img/exp_icon.svg" alt="expertise" class="deliver__img deliver__img_exp">
+                </div>
+                <div class="deliver__title">
+                  <span>Expertise</span>
+                </div>
+                <div class="deliver__text">
+                  <span>Developers you hire are screened multiple times, you work only with the best. </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line">
+        <div class="line__wrapper">
+          <div class="line__item line__item_title">
+            <div class="line__title">
+              <span>expertise</span>
+            </div>
+          </div>
+          <div class="line__item line__item_column">
+            <div class="line__box">
+              <div class="skill">
+                <div class="skill__wrapper">
+                  <div class="skill__title">
+                    <div class="skill__name">
+                      <span>PHP</span>
+                    </div>
+                    <div class="skill__icon"></div>
+                  </div>
+                  <div class="skill__list">
+                    <div class="skill__item">
+                      <span class="skill__text">Magento</span>
+                      <span class="skill__mark">
+                        <img src="./img/magento.svg" alt="magento">
+                      </span>
+                    </div>
+                    <div class="skill__item">
+                      <span class="skill__text">Drupal</span>
+                      <span class="skill__mark">
+                        <img src="./img/drupal.svg" alt="drupal">
+                      </span>
+                    </div>
+                    <div class="skill__item">
+                      <span class="skill__text">Laravel</span>
+                      <span class="skill__mark">
+                        <img src="./img/laravel.svg" alt="laravel">
+                      </span>
+                    </div>
+                    <div class="skill__item">
+                      <span class="skill__text">WP</span>
+                      <span class="skill__mark">
+                        <img src="./img/wp.svg" alt="WordPress">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="line__box">
+              <div class="skill">
+                <div class="skill__wrapper">
+                  <div class="skill__title">
+                    <div class="skill__name">
+                      <span>Python</span>
+                    </div>
+                    <div class="skill__icon">
+                      <img src="./img/python.svg" alt="python">
+                    </div>
+                  </div>
+                  <div class="skill__list">
+                    <div class="skill__item">
+                      <span class="skill__text">Django</span>
+                      <span class="skill__mark">
+                        <img src="./img/django.svg" alt="django">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="line__item line__item_column line__item_rev">
+            <div class="line__box">
+              <div class="skill">
+                <div class="skill__wrapper">
+                  <div class="skill__title">
+                    <div class="skill__name">
+                      <span>Java Script</span>
+                    </div>
+                    <div class="skill__icon">
+                      <img src="./img/js.svg" alt="js">
+                    </div>
+                  </div>
+                  <div class="skill__list">
+                    <div class="skill__item">
+                      <span class="skill__text">REACT</span>
+                      <span class="skill__mark">
+                        <img src="./img/react.svg" alt="react">
+                      </span>
+                    </div>
+                    <div class="skill__item">
+                      <span class="skill__text">Angular</span>
+                      <span class="skill__mark">
+                        <img src="./img/angular.svg" alt="angular">
+                      </span>
+                    </div>
+                    <div class="skill__item">
+                      <span class="skill__text">Vue</span>
+                      <span class="skill__mark">
+                        <img src="./img/vue.svg" alt="vue">
+                      </span>
+                    </div>
+                    <div class="skill__item">
+                      <span class="skill__text">Ember</span>
+                      <span class="skill__mark">
+                        <img src="./img/ember.svg" alt="ember">
+                      </span>
+                    </div>
+                    <div class="skill__item">
+                      <span class="skill__text">Node</span>
+                      <span class="skill__mark">
+                        <img src="./img/node.svg" alt="node">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="line__box">
+              <div class="skill">
+                <div class="skill__wrapper">
+                  <div class="skill__title">
+                    <div class="skill__name">
+                      <span>Golang</span>
+                    </div>
+                    <div class="skill__icon">
+                      <img src="./img/golang.svg" alt="golang">
+                    </div>
+                  </div>
+                  <div class="skill__list">
+                    <div class="skill__item">
+                      <span class="skill__text">Gin Gonic</span>
+                      <span class="skill__mark">
+                        <img src="./img/gin.svg" alt="gin gonic">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line">
+        <div class="line__wrapper">
+          <div class="line__item line__item_title">
+            <div class="line__title">
+              <span>cases</span>
+            </div>
+          </div>
+          <div class="line__item line__item_4">
+            <div class="slider">
+              <div class="slider__wrapper">
+                <div class="slider__control"></div>
+                <div class="slider__box slider__cases owl-carousel">
+                  <div class="slider__item slider__item_flex">
+                    <div class="slider__text">
+                      <p><img src="./img/rel-big.svg" alt=""></p>
+                      <p>Audio player software is used to play back sound recordings in one of the many formats available for computers today. It can also play back music CDs.</p> 
+                      <p>There is audio player software that is native to the computer’s operating system (Windows, Macintosh, and Linux)</p>
+                    </div>
+                    <div class="slider__img">
+                      <img src="./img/relesys.png" alt="relesys">
+                    </div>
+                  </div>
+                  <div class="slider__item slider__item_flex">
+                    <div class="slider__text">
+                      <p><img src="./img/rel-big.svg" alt=""></p>
+                      <p>Audio player software is used to play back sound recordings in one of the many formats available for computers today. It can also play back music CDs.</p> 
+                      <p>There is audio player software that is native to the computer’s operating system (Windows, Macintosh, and Linux)</p>
+                    </div>
+                    <div class="slider__img">
+                      <img src="./img/relesys.png" alt="relesys">
+                    </div>
+                  </div>
+                  <div class="slider__item slider__item_flex">
+                    <div class="slider__text">
+                      <p><img src="./img/rel-big.svg" alt=""></p>
+                      <p>Audio player software is used to play back sound recordings in one of the many formats available for computers today. It can also play back music CDs.</p> 
+                      <p>There is audio player software that is native to the computer’s operating system (Windows, Macintosh, and Linux)</p>
+                    </div>
+                    <div class="slider__img">
+                      <img src="./img/relesys.png" alt="relesys">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<%= _.template(require('./../includes/footer.html'))(data) %>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/bundle.js"></script>
+</body>
+</html>
