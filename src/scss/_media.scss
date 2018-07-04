@@ -23,6 +23,9 @@
   .line__item.line__item_column {
     max-width: 50%;
   }
+  .line__title br {
+    display: none;
+  }
 }
 @media screen and (max-width: 992px) {
 	.header__buttons {
@@ -61,6 +64,9 @@
   .header__logo {
     height: 50px;
     width: 160px;
+  }
+  .slider__wrapper .owl-dots {
+    bottom: -45px;
   }
   .slider__control {
     display: none;
@@ -154,6 +160,12 @@
   }
   .button__wrapper.footer__hire {
     display: block;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 70px;
+  }
+  .slider__wrapper {
+    margin-bottom: 70px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -169,6 +181,12 @@
 @media screen and (max-width: 450px) {
 	.deliver__icon {
     display: none;
+  }
+  .skill__title {
+    padding-right: 30px;
+  }
+  .skill__list {
+    padding-right: 35px;
   }
   .line__item {
     max-width: calc(100% - 25px);

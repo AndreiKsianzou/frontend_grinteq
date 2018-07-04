@@ -22,7 +22,6 @@ $(document).ready(function(){
             1100:{
                 items:7,
                 nav:true,
-                loop:false
             }
         }
     });

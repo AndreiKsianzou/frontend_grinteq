@@ -76,7 +76,7 @@
 
 .skill {
   &__wrapper {
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 20px hsla(0, 0%, 0%, 0.15);
   }
   &__icon {
     margin-left: 15px;
@@ -86,6 +86,7 @@
     color:#fff;
     height: 88px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding-left: 35px;
     padding-right: 15px;
