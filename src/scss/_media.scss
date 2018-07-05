@@ -92,7 +92,7 @@
     display: block;
     position: absolute;
     z-index: 4;
-    top: 50px;
+    top: 49px;
     left: calc(-12.5px - 100vw);
     width: 100vw;
     transition: all 0.5s ease 0s;
@@ -102,6 +102,9 @@
       left: -12.5px;
     }
   }
+  .header__wrapper {
+    padding-bottom: 4px;
+  }
   .header__item {
     height: 30px;
     margin-left: 0;
@@ -110,7 +113,7 @@
   .header__link {
     padding-left: 12.5px;
     padding-right: 12.5px;
-    line-height: 30px;
+    line-height: 26px;
     width: 100%;
     display: flex;
     text-align: center;
