@@ -92,7 +92,7 @@
     display: block;
     position: absolute;
     z-index: 4;
-    top: 49px;
+    top: 69px;
     left: calc(-12.5px - 100vw);
     width: 100vw;
     transition: all 0.5s ease 0s;
@@ -106,14 +106,15 @@
     padding-bottom: 4px;
   }
   .header__item {
-    height: 30px;
+    height: 61px;
     margin-left: 0;
     margin-right: 0;
   }
   .header__link {
     padding-left: 12.5px;
     padding-right: 12.5px;
-    line-height: 26px;
+    line-height: 61px;
+    font-size: 22px;
     width: 100%;
     display: flex;
     text-align: center;
@@ -123,6 +124,7 @@
     position: relative;
     padding-top: 0;
     padding-bottom: 0;
+    height: 70px;
   }
   .main-slide__wrapper {
     height: 236px;
