@@ -1,7 +1,6 @@
 import 'owl.carousel';
 $(document).ready(function(){
     $('.clients__list').owlCarousel({
-        margin:15,
         responsiveClass:true,
         navContainer: '.carousel__navigations',
         navText: [],
