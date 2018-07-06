@@ -1,10 +1,23 @@
 .header {
+  &__wrapper {
+    position: fixed;
+    z-index: 15;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
   &__box {
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: all 0.3s ease 0s;
+    &_scroll {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
   }
   &__logo {
     display: block;

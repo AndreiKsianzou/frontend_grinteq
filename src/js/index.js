@@ -54,3 +54,16 @@ burgerBtn.addEventListener('click', ()=>{
     burgerBtn.classList.toggle('header__burger_active');
     menuList.classList.toggle('header__menu_open');
 });
+
+const headerBox = document.querySelector('.header__box');
+let scrollFix = true;
+document.addEventListener('scroll', ()=>{
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > 100 && scrollFix) {
+        headerBox.classList.add('header__box_scroll');
+        scrollFix = false;
+    } else if (scrollTop <= 100 && !scrollFix) {
+        headerBox.classList.remove('header__box_scroll');
+        scrollFix = true;
+    }
+});
