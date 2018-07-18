@@ -3,10 +3,10 @@
     height: 30px;
     width: 100%;
     display: block;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Roboto mono';
     border: none;
-    background-color: #000;
+    background-color: #4485D1;
     box-shadow: 0 3px 10px rgba(0,0,0,0.4);
     color: #fff;
     text-transform: uppercase;
@@ -14,7 +14,7 @@
     cursor: pointer;
     &:hover {
       opacity: 0.8;
-      box-shadow: 0 3px 10px rgba(0,0,0,0);
+     
     }
     &:focus {
       outline: none;
@@ -32,6 +32,7 @@
 @import "./owl/owl.carousel.scss";
 @import "./_reset.scss";
 @import "./_container.scss";
+@import "./_contacts.scss";
 @import "./_header.scss";
 @import "./_line.scss";
 @import "./_slider.scss";

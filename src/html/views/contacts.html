@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700|Roboto:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.bundle.css">
+</head>
+<body>
+<%= _.template(require('./../includes/header.html'))(data) %> 
+<section class="box-shadow box-shadow_contacts">
+  <div class="box-shadow__wrapper">
+    <div class="container">
+      <div class="line">
+        <div class="line__wrapper">
+          <div class="line__item line__item_title">
+            <div class="line__title line__title_blue">
+              <span>contacts</span>
+            </div>
+          </div>
+          <div class="line__item line__item_30">
+            <div class="contacts">
+              <div class="contacts__wrapper">
+                <div class="contacts__item">
+                  <div class="contacts__title">
+                    <span>Skype&Email</span>
+                  </div>
+                  <div class="contacts__value">
+                    <span>info@grinteq.com</span>
+                  </div>
+                </div>
+                <div class="contacts__item">
+                  <div class="contacts__title">
+                    <span>WhatsApp&Telegram</span>
+                  </div>
+                  <div class="contacts__value">
+                    <span>+375 25 60-82-444</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="line__item line__item_50">
+            <div class="address">
+              <div class="address__wrapper">
+                <div class="address__item">
+                  <div class="address__title">
+                    <span>Belarus</span>
+                  </div>
+                  <div class="address__value">
+                    <span>Minsk,<br>
+                          Nezavisimosti 58</span>
+                  </div>
+                </div>
+                <div class="address__item">
+                  <div class="address__title">
+                    <span>Estonia</span>
+                  </div>
+                  <div class="address__value">
+                    <span>Kivi 3,<br>
+                          Jöhvi linn,<br>
+                          Ida-Virumaakond</span>
+                  </div>
+                </div>
+                <div class="address__item">
+                  <div class="address__title">
+                    <span>Lithuania</span>
+                  </div>
+                  <div class="address__value">
+                    <span>Vilnius,<br>
+                        m.Eisiskiu Sodu<br> 
+                        5-oji g.19
+                        </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<%= _.template(require('./../includes/footer.html'))(data) %>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/bundle.js"></script>
+</body>
+</html>
