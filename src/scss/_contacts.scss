@@ -13,7 +13,7 @@
 
 .contacts {
   &__wrapper {
-
+    margin-top: 20px;
   }
   &__item {
     margin-bottom: 15px;
@@ -40,5 +40,71 @@
   &__title {
     font-weight: 600;
     margin-bottom: 25px;
+  }
+}
+
+.contact-form {
+  &__wrapper {
+    margin-top: 45px;
+    margin-bottom: 60px;
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    margin-bottom: 20px;
+  }
+  &__label {
+    position: absolute;
+    left: -115px;
+    width: 115px;
+    font-size: 18px;
+  }
+  &__input,
+  &__textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #808080;
+    font-weight: 300;
+    font-size: 18px;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__input {
+    max-width: 420px;
+  }
+  &__textarea {
+    margin-top: 75px;
+    min-height: 85px;
+    max-width: 650px;
+    margin-bottom: 30px;
+    height: auto;
+  }
+  &__button {
+    height: 45px;
+    width: 200px;
+    font-size: 20px;
+  }
+  &__title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  &__wrapper {
+    display: flex;
+    margin-left: -12.5px;
+    margin-right: -12.5px;
+  }
+  &__box {
+    margin-left: 12.5px;
+    margin-right: 12.5px;
+    max-width: calc(80% - 25px);
+    width: 100%;
+  }
+  &__left {
+    margin-left: 12.5px;
+    margin-right: 12.5px;
+    max-width: calc(20% - 25px);
+    width: 100%;
   }
 }

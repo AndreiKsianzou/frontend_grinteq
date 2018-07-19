@@ -27,7 +27,11 @@
   }
 }
 
-
+.page_contacts {
+  .button__wrapper.footer__hire {
+    display: none;
+  }
+}
 
 @import "./owl/owl.carousel.scss";
 @import "./_reset.scss";

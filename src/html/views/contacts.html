@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700|Roboto:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/style.bundle.css">
 </head>
-<body>
+<body class="page_contacts">
 <%= _.template(require('./../includes/header.html'))(data) %> 
 <section class="box-shadow box-shadow_contacts">
   <div class="box-shadow__wrapper">
@@ -76,6 +76,64 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="contact-box">
+  <div class="contact-box__wrapper">
+    <div class="contact-box__box">
+      <div class="container">
+        <div class="contact-form">
+          <div class="contact-form__wrapper">
+            <div class="contact-form__left"></div>
+            <div class="contact-form__box">
+              <div class="contact-form__title">
+                <span>Drop us a line!</span>
+              </div>
+              <form class="contact-form__form">
+                <div class="contact-form__item">
+                  <div class="contact-form__label">
+                    <span>Name</span>
+                  </div>
+                  <input type="text" class="contact-form__input">
+                </div>
+                <div class="contact-form__item">
+                  <div class="contact-form__label">
+                    <span>Email</span>
+                  </div>
+                  <input type="text" class="contact-form__input">
+                </div>
+                <div class="contact-form__item">
+                  <div class="contact-form__label">
+                    <span>Subject</span>
+                  </div>
+                  <input type="text" class="contact-form__input">
+                </div>
+                <div class="contact-form__item">
+                  <div class="contact-form__label">
+                    <span>Phone</span>
+                  </div>
+                  <input type="text" class="contact-form__input">
+                </div>
+                <div class="contact-form__item">
+                  <div class="contact-form__label">
+                    <span>Message</span>
+                  </div>
+                  <textarea class="contact-form__textarea"></textarea>
+                </div>
+                <div class="contact-form__item">
+                  <div class="contact-form__label">
+                    <span></span>
+                  </div>
+                  <div class="button">
+                    <button class="button__wrapper contact-form__button">Send</button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>

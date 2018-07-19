@@ -32,6 +32,16 @@
   .line__item_50 {
     max-width: calc(60% - 25px);
   }
+  .contact-form__left {
+    display: none;
+  }
+  .contact-form__label {
+    position: static;
+    margin-bottom: 10px;
+  }
+  .contact-form__item {
+    display: block;
+  }
 }
 @media screen and (max-width: 992px) {
 	.header__buttons {
@@ -42,6 +52,12 @@
   }
   .line__wrapper {
     margin-bottom: 50px;
+  }
+  .contact-form__button {
+    font-size: 20px;
+  }
+  .contact-form__box {
+    max-width: calc(100% - 25px);
   }
 }
 @media screen and (max-width: 850px) {
@@ -120,7 +136,7 @@
     padding-left: 12.5px;
     padding-right: 12.5px;
     line-height: 61px;
-    font-size: 22px;
+    font-size: 20px;
     width: 100%;
     display: flex;
     text-align: center;
@@ -145,7 +161,7 @@
   }
   .line__item {
     max-width: calc(50% - 25px);
-    margin-bottom: 35px;
+    margin-bottom: 0px;
   }
   .line__wrapper {
     margin-bottom: 50px;
@@ -188,6 +204,13 @@
     box-shadow: none;
     padding-bottom: 0px;
     margin-bottom: 0px;
+  }
+  .contact-form__button {
+    max-width: 320px;
+    width: 100%;
+  }
+  .contacts__wrapper {
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 600px) {
