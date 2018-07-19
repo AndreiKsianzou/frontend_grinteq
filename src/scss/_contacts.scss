@@ -54,6 +54,7 @@
     margin-bottom: 20px;
   }
   &__label {
+    font-family: 'Roboto', sans-serif;
     position: absolute;
     left: -115px;
     width: 115px;
@@ -61,11 +62,13 @@
   }
   &__input,
   &__textarea {
+    font-family: 'Roboto', sans-serif;
     width: 100%;
     border: none;
     border-bottom: 1px solid #808080;
     font-weight: 300;
     font-size: 18px;
+    font-weight: 300;
     &:focus {
       outline: none;
     }
