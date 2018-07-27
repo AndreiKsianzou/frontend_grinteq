@@ -15,17 +15,17 @@ $(document).ready(function(){
                 nav:false
             },
             768:{
-                items:5,
+                items:4,
                 nav:false
             },
             1100:{
-                items:7,
+                items:5,
                 nav:true,
             }
         }
     });
     $('.slider__cases').owlCarousel({
-        margin: 15,
+
         responsiveClass:true,
         dots: true,
         navContainer: '.slider__control',

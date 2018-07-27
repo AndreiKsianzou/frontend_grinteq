@@ -4,6 +4,23 @@
     display: flex;
     margin-left: -12.5px;
     margin-right: -12.5px;
+    &_vc {
+      align-items: center;
+    }
+    &_case {
+      margin-bottom: 20px;
+    }
+  }
+  &__list {
+    &_ws {
+      .line__li {
+        list-style: none;
+      }
+      margin-bottom: 45px;
+    }
+  }
+  &__li {
+    margin-bottom: 20px;
   }
   &__item {
     margin-left: 12.5px;
@@ -62,14 +79,14 @@
 
   }
   &__icon {
-    height: 85px;
-    margin-bottom: 25px;
+    height: 60px;
+    margin-bottom: 10px;
   }
   &__img {
     width: auto;
-    height: 85px;
+    height: 60px;
     &_exp {
-      height: 63px;
+      height: 50px;
     }
   }
   &__title {
@@ -103,7 +120,7 @@
   &__title {
     background-color: #4485D1;
     color:#fff;
-    height: 88px;
+    height: 66px;
     display: flex;
     justify-content: space-between;
     align-items: center;
