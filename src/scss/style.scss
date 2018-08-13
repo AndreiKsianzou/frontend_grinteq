@@ -4,10 +4,11 @@
     width: 100%;
     display: block;
     font-size: 18px;
+    font-weight: 700;
     font-family: 'Roboto mono';
     border: none;
     background-color: #4485D1;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+    box-shadow: 0 10px 20px rgba(0,0,0,.1);
     color: #fff;
     text-transform: uppercase;
     transition: all 0.5s ease 0s;
@@ -24,12 +25,24 @@
       font-size: 20px;
       font-weight: 500;
     }
+    &_foot {
+      width: 200px;
+      height: 45px;
+      margin: 0 auto;
+      margin-bottom: 85px;
+    }
   }
 }
 
-.page_contacts {
+.page_inside {
   .button__wrapper.footer__hire {
     display: none;
+  }
+}
+
+body {
+  &.fixed {
+    overflow: hidden;
   }
 }
 
@@ -42,6 +55,8 @@
 @import "./_slider.scss";
 @import "./_case.scss";
 @import "./_review.scss";
+@import "./_map.scss";
+@import "./_tiles.scss";
 @import "./_main-slide.scss";
 @import "./_clients.scss";
 @import "./_footer.scss";

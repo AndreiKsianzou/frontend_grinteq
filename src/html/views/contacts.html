@@ -8,17 +8,39 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700|Roboto:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/style.bundle.css">
 </head>
-<body class="page_contacts">
+<body class="page_inside">
 <%= _.template(require('./../includes/header.html'))(data) %> 
-<section class="box-shadow box-shadow_contacts">
-  <div class="box-shadow__wrapper">
+<section class="main-slide">
+  <div class="main-slide__wrapper main-slide__wrapper_inside">
+    <div class="main-slide__img main-slide__img_inside" style="background-image: url(./img/slide.jpg);">
+      <video id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto">
+        <source src="./img/contacts.mp4" type="video/mp4">
+      </video>
+      <div class="container">
+        <div class="line">
+          <div class="line__wrapper line__wrapper_header">
+            <div class="line__item line__item_title">
+              <div class="line__title line__title_white line__title_top">
+                <span>contacts</span>
+              </div>
+            </div>
+            <div class="line__item line__item_4">
+              <div class="line__caption line__caption_white">
+                <span>Lets get in touch!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="content">
+  <div class="content__wrapper">
     <div class="container">
       <div class="line">
         <div class="line__wrapper line__wrapper_contacts">
-          <div class="line__item line__item_title">
-            <div class="line__title line__title_blue">
-              <span>contacts</span>
-            </div>
+          <div class="line__item line__item_title line__item_dis">
           </div>
           <div class="line__item line__item_30">
             <div class="contacts">
@@ -51,28 +73,25 @@
                   </div>
                   <div class="address__value">
                     <span>Minsk,<br>
-                          Nezavisimosti 58</span>
+                      Nezavisimosti 58/420, 220005</span>
                   </div>
                 </div>
                 <div class="address__item">
                   <div class="address__title">
-                    <span>Estonia</span>
+                    <span>Austria</span>
                   </div>
                   <div class="address__value">
-                    <span>Kivi 3,<br>
-                          Jöhvi linn,<br>
-                          Ida-Virumaakond</span>
+                    <span>Vienna,<br> Kollmayergasse 10/3, 1120</span>
                   </div>
                 </div>
                 <div class="address__item">
                   <div class="address__title">
-                    <span>Lithuania</span>
+                    <span>Portugal</span>
                   </div>
                   <div class="address__value">
-                    <span>Vilnius,<br>
-                        m.Eisiskiu Sodu<br> 
-                        5-oji g.19
-                        </span>
+                    <span>Lisbon,<br>
+                        Rua Luciano Cordeiro 113/2dt, 1150
+                    </span>
                   </div>
                 </div>
               </div>
@@ -119,16 +138,13 @@
                   </div>
                   <input type="text" class="contact-form__input">
                 </div>
-                <div class="contact-form__item">
+                <div class="contact-form__item contact-form__item_big">
                   <div class="contact-form__label">
                     <span>Message</span>
                   </div>
                   <textarea class="contact-form__textarea"></textarea>
                 </div>
                 <div class="contact-form__item">
-                  <div class="contact-form__label">
-                    <span></span>
-                  </div>
                   <div class="button">
                     <button class="button__wrapper contact-form__button">Send</button>
                   </div>

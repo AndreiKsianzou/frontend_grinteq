@@ -1,9 +1,17 @@
 .main-slide {
   &__wrapper {
-    margin-top: 75px;
+    margin-top: 65px;
     position: relative;
     width: 100%;
     height: 330px;
+    &_inside {
+      margin-bottom: 60px;
+      overflow: hidden;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    &_contacts {
+      
+    }
   }
   &__img {
     width: 100%;
@@ -17,6 +25,14 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+    &_inside {
+      display: flex;
+      align-items: center;
+      & > video {
+        position: absolute;
+        height: 330px;
+      }
     }
   }
   &__overlay {

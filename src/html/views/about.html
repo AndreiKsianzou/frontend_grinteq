@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700|Roboto:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.bundle.css">
+</head>
+<body class="page_inside">
+<%= _.template(require('./../includes/header.html'))(data) %> 
+<section class="map">
+  <div class="map__wrapper">
+    <div class="map__legend">
+      <div class="map__name map__name_offices">
+        <span>our_offices</span>
+      </div>
+      <div class="map__name map__name_clients">
+        <span>our_clients</span>
+      </div>
+    </div>
+    <div class="map__countries"></div>
+  </div>
+</section>
+<section class="content">
+  <div class="content__wrapper">
+    <div class="container">
+      <div class="line">
+        <div class="line__wrapper">
+          <div class="line__item line__item_title">
+            <div class="line__title">
+              <span>history</span>
+            </div>
+          </div>
+          <div class="line__item line__item_4">
+            <div class="line__text">
+              <span>We humbly started in 2016 with a small unit of 3 team members, and well, we did pivot several times in order to find perfect business model and formulated our most demanded services.
+                  If we fail (who doesn’t), we fail fast and adjust our approach for the next big step.
+                  Up to date, we have branched out into several technologies and specializations, e.g. trendy blockchain and own SaaS products, but there is one thing that holds true no matter what we are doing: we never settle.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line">
+        <div class="line__wrapper line__wrapper_last">
+          <div class="line__item line__item_title">
+            <div class="line__title">
+              <span>numbers</span>
+            </div>
+          </div>
+          <div class="line__item line__item_4">
+            <div class="numbers">
+              <div class="numbers__wrapper">
+                <div class="numbers__item">
+                  <div class="numbers__number">
+                    <span>99%</span>
+                  </div>
+                  <div class="numbers__text">
+                    <span>clients extended teams for 1.5+ year</span>
+                  </div>
+                </div>
+                <div class="numbers__item">
+                  <div class="numbers__number">
+                    <span>12-14</span>
+                  </div>
+                  <div class="numbers__text">
+                    <span>ppl average team size</span>
+                  </div>
+                </div>
+                <div class="numbers__item">
+                  <div class="numbers__number">
+                    <span>4-5</span>
+                  </div>
+                  <div class="numbers__text">
+                    <span>weeks to get a team</span>
+                  </div>
+                </div>
+                <div class="numbers__item">
+                  <div class="numbers__number">
+                    <span>320K</span>
+                  </div>
+                  <div class="numbers__text">
+                    <span>IT pros in the pool</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="top-footer">
+  <div class="top-footer__wrapper">
+    <div class="container">
+      <div class="button">
+        <button class="button__wrapper button__wrapper_foot button__popup">
+          Drop us a line 
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<%= _.template(require('./../includes/footer.html'))(data) %>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/bundle.js"></script>
+</body>
+</html>

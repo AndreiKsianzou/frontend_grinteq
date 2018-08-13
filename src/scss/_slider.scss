@@ -13,7 +13,9 @@
       font-size: 32px;
       font-family: 'Roboto mono';
       font-weight: 700;
-      top: 240px;
+      top: 20px;
+      height: 440px;
+      width: 50px;
       &:focus {
         outline: none;
       }
@@ -26,7 +28,7 @@
     }
   }
   &__wrapper {
-    box-shadow: 0 5px 20px hsla(0, 0%, 0%, 0.15);
+    box-shadow: 0 10px 20px rgba(0,0,0,.1);
     position: relative;
     z-index: 1;
     .owl-dots {
@@ -63,6 +65,8 @@
     padding-top: 50px;
     padding-right: 70px;
     padding-left: 105px;
+    display: block;
+    color: #000;
     &_flex {
       display: flex;
       margin-left: -15px;

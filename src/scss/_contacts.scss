@@ -4,7 +4,8 @@
     padding-bottom: 60px;
     margin-bottom: 65px;
   }
-  &_contacts {
+  &_contacts,
+  &_case {
     .box-shadow__wrapper {
       margin-top: 140px;
     }
@@ -12,9 +13,7 @@
 }
 
 .contacts {
-  &__wrapper {
-    margin-top: 20px;
-  }
+
   &__item {
     margin-bottom: 15px;
   }
@@ -32,7 +31,7 @@
     margin-left: -12.5px;
   }
   &__item {
-    width: 100%;
+    width: calc(33.33333% - 25px);
     max-width: calc(33.33333% - 25px);
     margin-left: 12.5px;
     margin-right: 12.5px;
@@ -47,15 +46,51 @@
   &__wrapper {
     margin-top: 45px;
     margin-bottom: 60px;
+    display: flex;
+    margin-left: -12.5px;
+    margin-right: -12.5px;
+    &_team {
+      margin-top: 15px;
+      .contact-form__label {
+        width: 60px;
+      }
+    }
+    &_popup {
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-top: 0;
+      margin-bottom: 0;
+      .contact-form__title {
+        font-size: 22px;
+      }
+      .contact-form__label {
+        width: 50px;
+        margin-right: 10px;
+      }
+      .contact-form__input {
+        max-width: 315px;
+      }
+      .contact-form__textarea {
+        max-width: 600px;
+      }
+      .contact-form__box {
+        max-width: 100%;
+      }
+    }
   }
   &__item {
     position: relative;
     display: flex;
     margin-bottom: 20px;
+    &_big {
+      display: block;
+      .contact-form__label {
+        width: auto;
+      }
+    }
   }
   &__label {
     font-family: 'Roboto', sans-serif;
-    position: absolute;
     left: -115px;
     width: 115px;
     font-size: 18px;
@@ -77,27 +112,26 @@
     max-width: 420px;
   }
   &__textarea {
-    margin-top: 75px;
+    margin-top: 35px;
     min-height: 85px;
     max-width: 650px;
     margin-bottom: 30px;
     height: auto;
+    &_small {
+      margin-top: 15px;
+    }
   }
   &__button {
     height: 45px;
     width: 200px;
-    font-size: 20px;
+    font-size: 18px;
   }
   &__title {
     font-size: 36px;
     font-weight: 600;
     margin-bottom: 30px;
   }
-  &__wrapper {
-    display: flex;
-    margin-left: -12.5px;
-    margin-right: -12.5px;
-  }
+  
   &__box {
     margin-left: 12.5px;
     margin-right: 12.5px;

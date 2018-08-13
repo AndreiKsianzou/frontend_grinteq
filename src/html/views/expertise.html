@@ -8,64 +8,25 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700|Roboto:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/style.bundle.css">
 </head>
-<body>
+<body class="page_inside">
 <%= _.template(require('./../includes/header.html'))(data) %> 
 <section class="main-slide">
-  <div class="main-slide__wrapper">
-    <div class="main-slide__overlay"></div>
-    <div class="main-slide__img" style="background-image: url(./img/slide.jpg);">
+  <div class="main-slide__wrapper main-slide__wrapper_inside">
+    <div class="main-slide__img main-slide__img_inside" style="background-image: url(./img/slide-exp.jpg);">
       <video id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto">
-        <source src="./img/video.mp4" type="video/webm">
+        <source src="./img/Love-Coding.mp4" type="video/mp4">
       </video>
-    </div>
-    <div class="main-slide__caption">
-      <span>Talented developers,<br/>
-      ready to join your team. </span>
-    </div>
-  </div>
-</section>
-<section class="clients">
-  <div class="clients__wrapper">
-    <div class="container">
-      <div class="line">
-          <div class="line__wrapper line__wrapper_vc">
-            <div class="line__item line__item_title line__item_dis-mob">
-              <div class="line__title">
-                <span>clients</span>
+      <div class="container">
+        <div class="line">
+          <div class="line__wrapper line__wrapper_header">
+            <div class="line__item line__item_title">
+              <div class="line__title line__title_white line__title_top">
+                <span>expertise</span>
               </div>
             </div>
-            <div class="line__item line__item_4 line__item_mob">
-              <div class="clients__box">
-                <div class="clients__list owl-carousel">
-                  <div class="clients__item">
-                    <img src="./img/bonusway-color.png" alt="bonusway" class="clients__img clients__img_color">
-                    <img src="./img/bonusway.png" alt="bonusway" class="clients__img clients__img_grey">
-                  </div>
-                  <div class="clients__item">
-                    <img src="./img/decred-color.png" alt="decred" class="clients__img clients__img_color">
-                    <img src="./img/decred.png" alt="decred" class="clients__img clients__img_grey">
-                  </div>
-                  <div class="clients__item">
-                    <img src="./img/kultmacher-color.png" alt="kultmacher" class="clients__img clients__img_color">
-                    <img src="./img/kultmacher.png" alt="kultmacher" class="clients__img clients__img_grey">
-                  </div>  
-                  <div class="clients__item">
-                    <img src="./img/rdw-color.png" alt="rdw" class="clients__img clients__img_color">
-                    <img src="./img/rdw.png" alt="rdw" class="clients__img clients__img_grey">
-                  </div>  
-                  <div class="clients__item">
-                    <img src="./img/rel-color.png" alt="relesys" class="clients__img clients__img_color">
-                    <img src="./img/rel.png" alt="relesys" class="clients__img clients__img_grey">
-                  </div>  
-                  <div class="clients__item">
-                    <img src="./img/tacktome-color.png" alt="stacktome" class="clients__img clients__img_color">
-                    <img src="./img/tacktome.png" alt="stacktome" class="clients__img clients__img_grey">
-                  </div> 
-                  <div class="clients__item">
-                    <img src="./img/ultiro-color.png" alt="ultiro" class="clients__img clients__img_color">
-                    <img src="./img/ultiro.png" alt="ultiro" class="clients__img clients__img_grey">
-                  </div>  
-                </div>
+            <div class="line__item line__item_4">
+              <div class="line__caption line__caption_white">
+                <span>Check what we are capable of!</span>
               </div>
             </div>
           </div>
@@ -81,273 +42,150 @@
         <div class="line__wrapper">
           <div class="line__item line__item_title">
             <div class="line__title">
-              <span>what_we_do</span>
+              <span>technology_<br>stacks</span>
             </div>
           </div>
           <div class="line__item line__item_4">
-            <div class="line__text">
-              <span>Build up a motivated team, fine-tuned for your project needs. The team adopts your code development practices and works as an extension to your in-house developers or as a stand alone development unit, which you lead.</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="line">
-        <div class="line__wrapper">
-          <div class="line__item line__item_title">
-            <div class="line__title">
-              <span>values_we_<br/>
-                deliver</span>
-            </div>
-          </div>
-          <div class="line__item">
-            <div class="deliver">
-              <div class="deliver__wrapper">
-                <div class="deliver__icon">
-                  <img src="./img/quick_set_up.png" alt="Quick set-up" class="deliver__img">
-                </div>
-                <div class="deliver__title">
-                  <span>Quick set-up</span>
-                </div>
-                <div class="deliver__text">
-                  <span>It takes 1-3 weeks on average to set up and balance your team.</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="line__item">
-            <div class="deliver">
-              <div class="deliver__wrapper">
-                <div class="deliver__icon">
-                  <img src="./img/flex_icon.svg" alt="flexibility" class="deliver__img">
-                </div>
-                <div class="deliver__title">
-                  <span>Flexibility</span>
-                </div>
-                <div class="deliver__text">
-                  <span>Your team can be easily scaled up/down.</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="line__item">
-            <div class="deliver">
-              <div class="deliver__wrapper">
-                <div class="deliver__icon">
-                  <img src="./img/adj_icon.svg" alt="adjustability" class="deliver__img">
-                </div>
-                <div class="deliver__title">
-                  <span>Adjustability</span>
-                </div>
-                <div class="deliver__text">
-                  <span>Developers will adopt your code development practices and methodologies.</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="line__item">
-            <div class="deliver">
-              <div class="deliver__wrapper">
-                <div class="deliver__icon">
-                  <img src="./img/exp_icon.svg" alt="expertise" class="deliver__img deliver__img_exp">
-                </div>
-                <div class="deliver__title">
-                  <span>Expertise</span>
-                </div>
-                <div class="deliver__text">
-                  <span>Developers you hire are screened multiple times, you work only with the best. </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="line">
-        <div class="line__wrapper">
-          <div class="line__item line__item_title">
-            <div class="line__title">
-              <span>expertise</span>
-            </div>
-          </div>
-          <div class="line__item line__item_column">
-            <div class="line__box">
+            <div class="line__box line__box_full">
               <div class="skill">
-                <div class="skill__wrapper">
-                  <div class="skill__title">
-                    <div class="skill__name">
-                      <span>PHP</span>
-                    </div>
-                    <div class="skill__icon"></div>
-                  </div>
-                  <div class="skill__list">
-                    <div class="skill__item">
-                      <span class="skill__text">Magento</span>
-                      <span class="skill__mark">
-                        <img src="./img/magento.png" alt="magento">
-                      </span>
-                    </div>
-                    <div class="skill__item">
-                      <span class="skill__text">Drupal</span>
-                      <span class="skill__mark">
-                        <img src="./img/drupal.png" alt="drupal">
-                      </span>
-                    </div>
-                    <div class="skill__item">
-                      <span class="skill__text">Laravel</span>
-                      <span class="skill__mark">
-                        <img src="./img/laravel.png" alt="laravel">
-                      </span>
-                    </div>
-                    <div class="skill__item">
-                      <span class="skill__text">WP</span>
-                      <span class="skill__mark">
-                        <img src="./img/wp.png" alt="WordPress">
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="line__box">
-              <div class="skill">
-                <div class="skill__wrapper">
+                <div class="skill__wrapper skill__wrapper_full">
                   <div class="skill__title">
                     <div class="skill__name">
                       <span>Python</span>
                     </div>
-                    <div class="skill__icon">
-                      <img src="./img/python.png" alt="python">
-                    </div>
                   </div>
-                  <div class="skill__list">
-                    <div class="skill__item">
-                      <span class="skill__text">Django</span>
-                      <span class="skill__mark">
-                        <img src="./img/django.png" alt="django">
-                      </span>
+                  <div class="skill__content">
+                    <div class="skill__half skill__half_full">
+                      <span><strong>Data management platform</strong> for e-commerce tool</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="line__item line__item_column line__item_rev">
-            <div class="line__box">
+            <div class="line__box line__box_full">
               <div class="skill">
-                <div class="skill__wrapper">
+                <div class="skill__wrapper skill__wrapper_full">
                   <div class="skill__title">
                     <div class="skill__name">
-                      <span>Java Script</span>
-                    </div>
-                    <div class="skill__icon">
-                      <img src="./img/js.png" alt="js">
+                      <span>PHP</span>
                     </div>
                   </div>
-                  <div class="skill__list">
-                    <div class="skill__item">
-                      <span class="skill__text">REACT</span>
-                      <span class="skill__mark">
-                        <img src="./img/react.png" alt="react">
-                      </span>
+                  <div class="skill__content">
+                    <div class="skill__half">
+                      <span><strong>E-commerce website </strong>for major US startup</span>
                     </div>
-                    <div class="skill__item">
-                      <span class="skill__text">Angular</span>
-                      <span class="skill__mark">
-                        <img src="./img/angular.png" alt="angular">
-                      </span>
+                    <div class="skill__half">
+                      <span><strong>Employment platform </strong>for >300K users a month</span>
                     </div>
-                    <div class="skill__item">
-                      <span class="skill__text">Vue</span>
-                      <span class="skill__mark">
-                        <img src="./img/vue.png" alt="vue">
-                      </span>
+                    <div class="skill__half">
+                      <span>Back end: Magento</span>
                     </div>
-                    <div class="skill__item">
-                      <span class="skill__text">Ember</span>
-                      <span class="skill__mark">
-                        <img src="./img/ember.png" alt="ember">
-                      </span>
-                    </div>
-                    <div class="skill__item">
-                      <span class="skill__text">Node</span>
-                      <span class="skill__mark">
-                        <img src="./img/node.png" alt="node">
-                      </span>
+                    <div class="skill__half">
+                      <span>Back end: Symfony 3</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="line__box">
+            <div class="line__box line__box_full">
               <div class="skill">
-                <div class="skill__wrapper">
+                <div class="skill__wrapper skill__wrapper_full">
                   <div class="skill__title">
                     <div class="skill__name">
                       <span>Golang</span>
                     </div>
-                    <div class="skill__icon">
-                      <img src="./img/golang.png" alt="golang">
+                  </div>
+                  <div class="skill__content">
+                    <div class="skill__half">
+                      <span><strong>Blockchain wallet </strong>development with autonomous logic for major blockchain project</span>
+                    </div>
+                    <div class="skill__half">
+                      <span><strong>Transaction cost reduction service </strong>for airfare search aggregator</span>
+                    </div>
+                    <div class="skill__half">
+                      <span><strong>Employee administration system </strong>for system integration company</span>
+                    </div>
+                    <div class="skill__half">
+                      <span><strong>Image processing</strong>web application for a Berlin based startup</span>
                     </div>
                   </div>
-                  <div class="skill__list">
-                    <div class="skill__item">
-                      <span class="skill__text">Gin Gonic</span>
-                      <span class="skill__mark">
-                        <img src="./img/gin.png" alt="gin gonic">
+                </div>
+              </div>
+            </div>
+            <div class="line__box line__box_full">
+              <div class="skill">
+                <div class="skill__wrapper skill__wrapper_full">
+                  <div class="skill__title">
+                    <div class="skill__name">
+                      <span>Solidity
                       </span>
                     </div>
                   </div>
+                  <div class="skill__content">
+                    <div class="skill__half">
+                      <span><strong>Property token and smart contact development,</strong> using non trivial mining scheme to comply with tax requirements</span>
+                    </div>
+                    <div class="skill__half">
+                      <span><strong>Supporting the development</strong> of a decentralized cryptocurrency exchange</span>
+                    </div>
+                    <div class="skill__half">
+                      <span><strong>Security audit of utility token</strong> smart contract</span>
+                    </div>
+                    
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="line">
-        <div class="line__wrapper">
-          <div class="line__item line__item_title">
-            <div class="line__title">
-              <span>cases</span>
-            </div>
-          </div>
-          <div class="line__item line__item_4">
-            <div class="slider">
-              <div class="slider__wrapper">
-                <div class="slider__control"></div>
-                <div class="slider__box slider__cases owl-carousel">
-                  <div class="slider__item slider__item_flex">
-                    <div class="slider__text">
-                      <p><img src="./img/rel-big.svg" alt=""></p>
-                      <p>The platform’s ais is to to transform and improve internal communication and performance management for businesses by applying customized app solutions.</p> 
-                      <p>By using features based on intelligent software and elements of gamification the App motivates employees towards better performance and a proactive mindset. The company is continuously developing the software to stay aligned with the clients’ needs.</p>
-                    </div>
-                    <div class="slider__img">
-                      <img src="./img/relesys.png" alt="relesys">
+            <div class="line__box line__box_full">
+              <div class="skill">
+                <div class="skill__wrapper skill__wrapper_full">
+                  <div class="skill__title">
+                    <div class="skill__name">
+                      <span>Drupal 7 and 8</span>
                     </div>
                   </div>
-                  <div class="slider__item slider__item_flex">
-                    <div class="slider__text">
-                      <p><img src="./img/rel-big.svg" alt=""></p>
-                      <p>The platform’s ais is to to transform and improve internal communication and performance management for businesses by applying customized app solutions.</p> 
-                      <p>By using features based on intelligent software and elements of gamification the App motivates employees towards better performance and a proactive mindset. The company is continuously developing the software to stay aligned with the clients’ needs.</p>
+                  <div class="skill__content">
+                    <div class="skill__half">
+                      <span><strong>Blockchain wallet </strong>development with autonomous logic for major blockchain project</span>
                     </div>
-                    <div class="slider__img">
-                      <img src="./img/relesys.png" alt="relesys">
+                    <div class="skill__half">
+                      <span><strong>Transaction cost reduction service </strong>for airfare search aggregator</span>
                     </div>
-                  </div>
-                  <div class="slider__item slider__item_flex">
-                    <div class="slider__text">
-                      <p><img src="./img/rel-big.svg" alt=""></p>
-                      <p>The platform’s ais is to to transform and improve internal communication and performance management for businesses by applying customized app solutions.</p> 
-                      <p>By using features based on intelligent software and elements of gamification the App motivates employees towards better performance and a proactive mindset. The company is continuously developing the software to stay aligned with the clients’ needs.</p>
+                    <div class="skill__half">
+                      <span><strong>Employee administration system </strong>for system integration company</span>
                     </div>
-                    <div class="slider__img">
-                      <img src="./img/relesys.png" alt="relesys">
+                    <div class="skill__half">
+                      <span><strong>Image processing</strong>web application for a Berlin based startup</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            
+            <div class="line__box line__box_full">
+              <div class="skill">
+                <div class="skill__wrapper skill__wrapper_full">
+                  <div class="skill__title">
+                    <div class="skill__name">
+                      <span>Angular 2</span>
+                    </div>
+                  </div>
+                  <div class="skill__content">
+                    <div class="skill__half">
+                      <span><strong>Blockchain wallet </strong>development with autonomous logic for major blockchain project</span>
+                    </div>
+                    <div class="skill__half">
+                      <span><strong>Transaction cost reduction service </strong>for airfare search aggregator</span>
+                    </div>
+                    <div class="skill__half">
+                      <span><strong>Employee administration system </strong>for system integration company</span>
+                    </div>
+                    <div class="skill__half">
+                      <span><strong>Image processing</strong>web application for a Berlin based startup</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
